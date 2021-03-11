@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name ="Suite">
+	<test name ="Test">
+		<parameter name = "url" value = "https://amazon.com"/>
+		<parameter name = "byXPATH" value = "XPATH"/>
+		<parameter name = "itemname" value = "qa testing for beginners"/>
+		<parameter name = "searchboxXPath" value = "//input[@id='twotabsearchtextbox']"/>
+		<parameter name = "searchButtonXPath" value = "//input[@id='nav-search-submit-button']"/>
+		<parameter name = "itemXpath" value ="//a//span[contains(text(),'End-to-End Web Testing with Cypress:')]" />
+		<parameter name = "itemPriceXpath" value = "//span[@id='price' ]" />
+		<parameter name ="addToCartBtnXpath" value = "//input[@id='add-to-cart-button']" />
+		<parameter name = "proceedToCheckOutPriceXpath" value = "//span[@class='a-color-price hlb-price a-inline-block a-text-bold']" />
+		<parameter name = "proceedToCheckOutBtnXpath" value = "//div[@id = 'huc-v2-order-row-buttons']//a[contains(text(),'Proceed to checkout')]" />
+		<classes>
+			<class name = "moduleAmazon.Commons"/>
+			<class name = "testCases.PlaceOrder"/>
+		</classes>
+	</test>
+</suite>

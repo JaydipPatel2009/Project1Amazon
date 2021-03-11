@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="10" passed="10">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="24910" started-at="2021-03-10T17:08:23 PST" finished-at="2021-03-10T17:08:48 PST">
+    <groups>
+      <group name="PlaceOrder">
+        <method signature="PlaceOrder.initDriver(java.lang.String, java.lang.String)[pri:0, instance:testCases.PlaceOrder@57855c9a]" name="initDriver" class="testCases.PlaceOrder"/>
+        <method signature="PlaceOrder.openWebPortal(java.lang.String)[pri:0, instance:testCases.PlaceOrder@57855c9a]" name="openWebPortal" class="testCases.PlaceOrder"/>
+      </group> <!-- PlaceOrder -->
+    </groups>
+    <test name="Test" duration-ms="24910" started-at="2021-03-10T17:08:23 PST" finished-at="2021-03-10T17:08:48 PST">
+      <class name="testCases.PlaceOrder">
+        <test-method status="PASS" signature="initDriver(java.lang.String, java.lang.String)[pri:0, instance:testCases.PlaceOrder@57855c9a]" name="initDriver" duration-ms="7102" started-at="2021-03-10T17:08:23 PST" data-provider="browser" finished-at="2021-03-10T17:08:30 PST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[C:\Users\jaydpate\Selenium\chromedriver_win32\chromedriver.exe]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initDriver -->
+        <test-method status="PASS" signature="openWebPortal(java.lang.String)[pri:0, instance:testCases.PlaceOrder@57855c9a]" name="openWebPortal" duration-ms="3420" started-at="2021-03-10T17:08:30 PST" depends-on-methods="testCases.PlaceOrder.initDriver" finished-at="2021-03-10T17:08:34 PST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[https://amazon.com]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openWebPortal -->
+        <test-method status="PASS" signature="searchBarElement(java.lang.String, java.lang.String)[pri:0, instance:testCases.PlaceOrder@57855c9a]" name="searchBarElement" duration-ms="323" started-at="2021-03-10T17:08:34 PST" depends-on-methods="testCases.PlaceOrder.openWebPortal" finished-at="2021-03-10T17:08:34 PST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[XPATH]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[//input[@id='twotabsearchtextbox']]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- searchBarElement -->
+        <test-method status="PASS" signature="enterText(java.lang.String)[pri:0, instance:testCases.PlaceOrder@57855c9a]" name="enterText" duration-ms="243" started-at="2021-03-10T17:08:34 PST" depends-on-methods="testCases.PlaceOrder.searchBarElement" finished-at="2021-03-10T17:08:34 PST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[qa testing for beginners]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- enterText -->
+        <test-method status="PASS" signature="clickElement(java.lang.String, java.lang.String)[pri:0, instance:testCases.PlaceOrder@57855c9a]" name="clickElement" duration-ms="6472" started-at="2021-03-10T17:08:34 PST" depends-on-methods="testCases.PlaceOrder.enterText" finished-at="2021-03-10T17:08:41 PST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[XPATH]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[//input[@id='nav-search-submit-button']]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickElement -->
+        <test-method status="PASS" signature="clickItem(java.lang.String, java.lang.String)[pri:0, instance:testCases.PlaceOrder@57855c9a]" name="clickItem" duration-ms="3531" started-at="2021-03-10T17:08:41 PST" depends-on-methods="testCases.PlaceOrder.clickElement" finished-at="2021-03-10T17:08:44 PST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[XPATH]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[//a//span[contains(text(),'End-to-End Web Testing with Cypress:')]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- clickItem -->
+        <test-method status="PASS" signature="itemPrice(java.lang.String, java.lang.String)[pri:0, instance:testCases.PlaceOrder@57855c9a]" name="itemPrice" duration-ms="264" started-at="2021-03-10T17:08:44 PST" depends-on-methods="testCases.PlaceOrder.clickItem" finished-at="2021-03-10T17:08:45 PST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[XPATH]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[//span[@id='price' ]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- itemPrice -->
+        <test-method status="PASS" signature="addToCart(java.lang.String, java.lang.String)[pri:0, instance:testCases.PlaceOrder@57855c9a]" name="addToCart" duration-ms="2194" started-at="2021-03-10T17:08:45 PST" depends-on-methods="testCases.PlaceOrder.itemPrice" finished-at="2021-03-10T17:08:47 PST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[XPATH]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[//input[@id='add-to-cart-button']]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addToCart -->
+        <test-method status="PASS" signature="verifyPriceBeforeCheckout(java.lang.String, java.lang.String)[pri:0, instance:testCases.PlaceOrder@57855c9a]" name="verifyPriceBeforeCheckout" duration-ms="92" started-at="2021-03-10T17:08:47 PST" depends-on-methods="testCases.PlaceOrder.addToCart" finished-at="2021-03-10T17:08:47 PST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[XPATH]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[//span[@class='a-color-price hlb-price a-inline-block a-text-bold']]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPriceBeforeCheckout -->
+        <test-method status="PASS" signature="proceedToCheckOut(java.lang.String, java.lang.String)[pri:0, instance:testCases.PlaceOrder@57855c9a]" name="proceedToCheckOut" duration-ms="1156" started-at="2021-03-10T17:08:47 PST" depends-on-methods="testCases.PlaceOrder.verifyPriceBeforeCheckout" finished-at="2021-03-10T17:08:48 PST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[XPATH]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[//div[@id = 'huc-v2-order-row-buttons']//a[contains(text(),'Proceed to checkout')]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- proceedToCheckOut -->
+      </class> <!-- testCases.PlaceOrder -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>

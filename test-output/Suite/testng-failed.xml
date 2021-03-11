@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <parameter name="searchboxXPath" value="//input[@id=&#039;twotabsearchtextbox&#039;]"/>
+    <parameter name="searchButtonXPath" value="//input[@id=&#039;nav-search-submit-button&#039;]"/>
+    <parameter name="itemname" value="qa testing for beginners"/>
+    <parameter name="byXPATH" value="XPATH"/>
+    <parameter name="url" value="https://amazon.com"/>
+    <classes>
+      <class name="testCases.PlaceOrder">
+        <methods>
+          <include name="clickElement" invocation-numbers="0"/>
+          <include name="enterText" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testCases.PlaceOrder -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
